@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" >
+
+
+   <security-constraint>
+      <web-resource-collection>
+         <web-resource-name>WEB</web-resource-name>
+         <url-pattern>/*</url-pattern>
+         <http-method>GET</http-method>
+         <http-method>POST</http-method>
+      </web-resource-collection>
+      <auth-constraint>
+         <role-name>login</role-name>     <!-- Any valid operator -->
+      </auth-constraint>
+   </security-constraint>
+
+
+    <security-constraint>
+       <web-resource-collection>
+          <web-resource-name>WEB</web-resource-name>
+          <url-pattern>/second.jsp</url-pattern>
+          <http-method>GET</http-method>
+          <http-method>POST</http-method>
+       </web-resource-collection>
+       <auth-constraint>
+          <role-name>view_user_category_1</role-name>    <!-- Operator with Access User Category 1 privilege -->
+       </auth-constraint>
+    </security-constraint>
+
+   <login-config>
+      <auth-method>FORM</auth-method>
+      <form-login-config>
+         <form-login-page>/loginout/login.jsp</form-login-page>
+         <form-error-page>/loginout/fail_login.jsp</form-error-page>
+      </form-login-config>
+   </login-config>
+</web-app>
