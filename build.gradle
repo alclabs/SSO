@@ -8,6 +8,7 @@ apply from: configurations.gradleScript.resolve().iterator().next()
 version = '1.0'
 
 dependencies {
-   providedCompile 'com.controlj.green:addonsupport-api-addon:1.0.8'
+   providedCompile 'com.controlj.green:directaccess-api-addon:1.1.0.+'
+   providedCompile 'com.controlj.green:webaccess-api-addon:1.1.0.+'
    providedCompile 'javax.servlet:servlet-api:2.5'
 }

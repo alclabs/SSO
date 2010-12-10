@@ -1,13 +1,13 @@
-<%@ page import="com.controlj.green.addonsupport.AddOnInfo" %>
 <%@ page import="com.controlj.green.addonsupport.web.Link" %>
 <%@ page import="com.controlj.green.addonsupport.web.UITree" %>
+<%@ page import="com.controlj.green.addonsupport.access.DirectAccess" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head><title>Simple jsp page</title></head>
 
   <body>
     <div>Congratulations, you are now logged in as:
-       <%= AddOnInfo.getAddOnInfo().getUserSystemConnection(request).getOperatorLoginName() %>
+       <%= DirectAccess.getDirectAccess().getUserSystemConnection(request).getOperatorLoginName() %>
     </div>
     <div style="margin-top:30px;">
         <form method="POST" action="loginout/logout.jsp">
