@@ -24,14 +24,7 @@ Several libraries are used in this product.
 Copyright and license information for each library is included below:
 
 -------------------------------------------------------------------------------
-directaccess-api-addon package
--------------------------------------------------------------------------------
-Copyright 2007-2010 Automated Logic Corporation
-Website: http://alcshare.com
-License: http://repo.alcshare.com/licenses/addon-license-1.html
-
--------------------------------------------------------------------------------
-webaccess-api-addon package
+addonsupport-api-addon package
 -------------------------------------------------------------------------------
 Copyright 2007-2010 Automated Logic Corporation
 Website: http://alcshare.com
