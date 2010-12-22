@@ -20,8 +20,8 @@ THE SOFTWARE.
 
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
-Several libraries are used in this product.
-Copyright and license information for each library is included below:
+Several libraries and tools are used in this product.
+Copyright and license information for each is included below:
 
 -------------------------------------------------------------------------------
 directaccess-api-addon package
@@ -36,4 +36,10 @@ webaccess-api-addon package
 Copyright 2007-2010 Automated Logic Corporation
 Website: http://alcshare.com
 License: http://repo.alcshare.com/licenses/addon-license-1.html
+
+-------------------------------------------------------------------------------
+gradle tool
+-------------------------------------------------------------------------------
+Website: http://gradle.org
+License: Apache version 2.0 - http://www.apache.org/licenses/LICENSE-2.0.html
 
