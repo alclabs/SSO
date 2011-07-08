@@ -2,10 +2,15 @@
 // and then apply it.
 configurations { gradleScript }
 repositories { mavenRepo urls: 'http://repo.alcshare.com' }
-dependencies { gradleScript group: 'com.alcshare', name: 'alclabs-gradle', ext: 'gradle', version: '1.0.2' }
+dependencies { gradleScript group: 'com.alcshare', name: 'alclabs-gradle', ext: 'gradle', version: '1.0.5' }
 apply from: configurations.gradleScript.resolve().iterator().next()
 
-version = '2.0'
+info {
+  name = 'SSO'
+  description = 'Single Sign On sample'
+  version = '2.0'
+  vendor = 'ALC Labs'
+}
 
 dependencies {
    providedCompile 'com.controlj.green:directaccess-api-addon:1.1.0.+'
